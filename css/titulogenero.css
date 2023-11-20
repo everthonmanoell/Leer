@@ -1,0 +1,9 @@
+main .titulogenero h1{
+    text-align: start;
+}
+
+main .titulogenero p{
+    text-align: start;
+    font-size: small;
+    opacity: 70%;
+}
