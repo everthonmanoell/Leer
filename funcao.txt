@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adicionar Livro</title>
+  </head>
+  <body>
+    <form>
+      <label for="imagem"> Link da imagem:</label>
+      <input type="text" id="imagem" name="imagem"><br><br>
+      <label for="descricao">Descrição:</label>
+      <input type="text" id="descricao" name="descricao"><br><br>
+      <label for="sinopse">Sinopse:</label>
+      <input type="text" id="sinopse" name="sinopse"><br><br>
+      <label for="genero">Gênero:</label>
+      <input type="text" id="genero" name="genero"><br><br>
+      <button type="button" onclick="adicionarLivro()">Adicionar Livro</button>
+    </form>
+
+    <div id="livros"></div>
+
+    <script>
+      function adicionarLivro() {
+        var imagem = document.getElementsByTagName("imagem").value;
+        var descricao = document.getElementsByTagName("descricao").value;
+        var sinopse = document.getElementsByTagName("sinopse").value;
+        var genero = document.getElementsByTagName("genero").value;
+
+        var livro = "<div>" +
+                      "<img src='" + imagem + "' alt='Imagem do Livro'>" +
+                      "<h2>" + descricao + "</h2>" +
+                      "<p>" + sinopse + "</p>" +
+                      "<p>" + genero + "</p>" +
+                    "</div>";
+
+        document.getElementById("livros").innerHTML += livro;
+      }
+    </script>
+  </body>
+</html>
