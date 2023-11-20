@@ -1,0 +1,117 @@
+       <!-- Card 5 Ação-->
+
+    <div class="col-3 mb-4">
+
+      <div class="card border" style="width: 18rem;" data-toggle="modal" data-target="#exampleModal5">
+        <img src="./img/ação/vento.webp" class="card-img-top w-100 h-100" alt="..." style="object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">O Nome do Vento</h5>
+          <p class="card-text">O Nome do Vento é o primeiro livro da série Crônica do Matador do Rei escrita por Patrick
+            Rothfuss...</p>
+        </div>
+      </div>
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel5">O Nome do Vento</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/ação/vento.webp" class="card-img-top w-100 h-100" alt="..." style="object-fit: cover;">
+              <h5 class="card-title">O Nome do Vento</h5>
+              <p class="card-text"> O Nome do Vento é o primeiro livro da série Crônica do Matador do Rei escrita por
+                Patrick Rothfuss. O romance é uma
+                narrativa dentro de uma narrativa, em que o protagonista, Kvothe, narra sua própria história a um
+                cronista
+                em busca da
+                verdade por trás dos feitos lendários do homem conhecido como o Matador do Rei. Kvothe, dotado de
+                talento
+                musical e mágico,
+                vive uma vida repleta de altos e baixos, desde sua infância em uma trupe de artistas até sua entrada na
+                prestigiada
+                Universidade Arcana. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Card 5 Comédia -->
+    <div class="col-3 mb-4">
+      <div class="card border" style="width: 18rem;" data-toggle="modal" data-target="#exampleModal10">
+        <img src="./img/comedia/tom-sawyer.webp" class="card-img-top w-100 h-100" alt="..." style="object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">As aventuras de tom Sawyer</h5>
+          <p class="card-text">Tom, menino órfão que mora com a tia, tem a irreverência própria de sua idade, no limite
+            entr...</p>
+        </div>
+      </div>
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel10"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel10">As aventuras de tom Sawyer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/comedia/tom-sawyer.webp" class="card-img-top w-100 h-100" alt="..."
+                style="object-fit: cover;">
+              <h5 class="card-title">As aventuras de tom Sawyer</h5>
+              <p class="card-text">Tom, menino órfão que mora com a tia, tem a irreverência própria de sua idade, no
+                limite entre a infância e a
+                adolescência. Mark Twain, através dos olhos ingênuos do protagonista, constrói um romance de formação,
+                que
+                denuncia a
+                hipocrisia e o preconceito da sociedade, sem deixar de lado a ternura. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 5 Documentario -->
+    <div class="col-3 mb-4">
+      <div class="card border" style="width: 18rem;" data-toggle="modal" data-target="#exampleModal15">
+        <img src="./img/documentario/rota66.jpg" class="card-img-top w-100 h-100" alt="..." style="object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Rota 66, A História da Polícia que Mata</h5>
+          <p class="card-text"> É obra do jornalista Cláudio Barcellos de Barcellos, ou Caco Barcellos...</p>
+        </div>
+      </div>
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel15"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel15">Rota 66, A História da Polícia que Mata</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/documentario/rota66.jpg" class="card-img-top w-100 h-100" alt="..."
+                style="object-fit: cover;">
+              <h5 class="card-title">Rota 66, A História da Polícia que Mata</h5>
+              <p class="card-text">Rota 66, A História da Polícia que Mata” é obra do jornalista Cláudio Barcellos de
+                Barcellos, ou Caco Barcellos,
+                como também é conhecido. O livro tem cerca de 352 páginas e é fruto de uma investigação que durou cinco
+                anos sobre o
+                esquadrão da morte que age na cidade de São Paulo, a Rota (Rondas Ostensivas Tobias de Aguiar). </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
