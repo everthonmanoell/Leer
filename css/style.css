@@ -11,6 +11,10 @@
     margin-left: 3%;
   }
 
+  .img-logo{
+   width: 5%; 
+   margin-right: 5%;
+  }
   .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
