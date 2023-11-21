@@ -542,6 +542,11 @@ classe h-100 define a altura como 100%-->
       </div>
     </div>
 
+
+    <div id="cardlivro"></div>
+
+ 
+
   </main>
 
   <div class="container">
@@ -574,6 +579,33 @@ classe h-100 define a altura como 100%-->
   <script>
     new window.VLibras.Widget();
   </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      // Recuperar a string do localStorage
+      var dadosString = localStorage.getItem('dadosString');
+
+      // Verificar se a string existe antes de usá-la
+      if (dadosString) {
+          // Transformar a string em um elemento HTML para facilitar a manipulação
+          var dadosElement = document.createElement('div');
+          dadosElement.innerHTML = dadosString;
+
+          // Obter o gênero dos dados
+          var generoElement = dadosElement.querySelector('.card #genero');
+          var genero = generoElement ? generoElement.innerText.trim().toLowerCase() : '';
+
+          // Verificar se o gênero é igual a "acao"
+          var nomeDaPagina = window.location.pathname;
+          if (genero === nomeDaPagina) {
+              // Exibir os dados apenas se o gênero for "acao"
+              document.getElementById('cardlivro').appendChild(dadosElement);
+          }
+      }
+  });
+</script>
 </body>
 
 </html>

@@ -3,63 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Livro</title>
+    <title>Formulário</title>
 </head>
 
 <body>
-    <h3>Cadastrar Livro</h3>
-    <form>
-        <label for="imagem"> Link da Imagem:</label>
-        <input type="text" id="imagem" name="imagem" required><br><br>
+    <h2>Cadastrando o livro</h2>
+    <!--formulário HTML -->
+    <form id="meuFormulario">
+        <label for="imagem">Imagem URL:</label>
+        <input type="text" id="imagem" name="imagem" required /><br>
 
-        <label for="titulo"> Titulo do Livro:</label>
-        <input type="text" id="titulo" name="titulo" required><br><br>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required /><br>
 
-        <label for="genero">Escolha um gênero:</label>
-        <select id="genero" name="genero" required>
-            <option value="#" disabled selected>Gênero</option>
-            <option value="acao">Ação</option>
-            <option value="comedia">Comédia</option>
-            <option value="documentario">Documentário</option>
-            <option value="misterio">Mistério</option>
-            <option value="motivacional">Motivacional</option>
-            <option value="romance">Romance</option>
-            <option value="suspense">Suspense</option>
-            <option value="terror">Terror</option>
-            <option value="outros">Outros</option>
-        </select> <br><br>
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" name="genero" required /><br>
 
-        <label for="sinopse">Sinopse:</label><br>
-        <textarea name="sinopse" id="sinopse" cols="30" rows="10" required></textarea><br><br>
+        <label for="sinopse">Sinopse:</label>
+        <textarea id="sinopse" name="sinopse" required></textarea><br>
 
-        <label for="resumo">Resumo do Filme:</label><br>
-        <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea><br><br>
+        <label for="resumo">Resumo:</label>
+        <textarea id="resumo" name="resumo" required></textarea><br>
 
-        <button type="button" onclick="adicionarLivro()">Adicionar</button>
-        <button type="reset"> Limpar</button>
+        <!-- botão de envio -->
+        <button type="submit" onclick="alert('O livro foi adicionado com sucesso!')">Enviar</button>
     </form>
 
-    <div id="livros"></div>
-
     <script>
-        function adicionarLivro() {
-            var imagem = document.getElementById("imagem").value;
-            var titulo = document.getElementById("titulo").value;
-            var genero = document.getElementById("genero").value;
-            var sinopse = document.getElementById("sinopse").value;
-            var resumo = document.getElementById("resumo").value;
+        //  função para processar o formulário
+        function processarFormulario() {
+            var imagem = document.getElementById('imagem').value;
+            var titulo = document.getElementById('titulo').value;
+            var genero = document.getElementById('genero').value;
+            var sinopse = document.getElementById('sinopse').value;
+            var resumo = document.getElementById('resumo').value;
 
-            // Chamada à função card para gerar o HTML do card
-            var cardHtml = card(imagem, titulo, sinopse, resumo);
-        }
-
-
-        function card(imagem, titulo, sinopse, resumo) {
-
-            //Card Inicial
-            "<div class='card border' style='width: 18rem;' data-toggle='modal' data-target='#exampleModal1'>" +
+            var dadosString = "<div class='card border' style='width: 18rem;' data-toggle='modal' data-target='#exampleModal1'>" +
                 "<img src='" + imagem + "' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>" +
                 "<div class='card-body'>" +
                 "<h5 class='card-title'>" + titulo + "</h5>" +
@@ -67,7 +47,7 @@
                 "</div>" +
                 "</div>" +
 
-                //Modal
+                // Modal
                 "<div class='modal fade' id='exampleModal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel1' aria-hidden='true'>" +
                 "<div class='modal-dialog' role='document'>" +
                 "<div class='modal-content'>" +
@@ -77,8 +57,6 @@
                 "<span aria-hidden='true'>&times;</span>" +
                 "</button>" +
                 "</div>" +
-
-
                 "<div class='modal-body'>" +
                 "<img src='" + imagem + "' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>" +
                 "<h5 class='card-title'>" + titulo + "</h5>" +
@@ -86,10 +64,25 @@
                 "</div>" +
                 "</div>" +
                 "</div>" +
+                "</div>" +
+                "<div id= 'livro'>" +
                 "</div>";
 
+            localStorage.setItem('dadosString', dadosString);
+
+            window.location.href = genero + '.html';
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var formulario = document.getElementById('meuFormulario');
+
+            formulario.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evitar o envio do formulário padrão
+                processarFormulario();
+            });
+        });
     </script>
+
 </body>
 
 </html>
