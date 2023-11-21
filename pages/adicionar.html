@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Livro</title>
+</head>
+
+<body>
+    <h3>Cadastrar Livro</h3>
+    <form>
+        <label for="imagem"> Link da imagem:</label>
+        <input type="text" id="imagem" name="imagem"><br><br>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao"><br><br>
+        <label for="sinopse">Sinopse:</label>
+        <input type="text" id="sinopse" name="sinopse"><br><br>
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" name="genero"><br><br>
+        <button type="button" onclick="adicionarLivro()">Adicionar</button>
+        <button type="reset"> Limpar</button>
+    </form>
+
+    <div id="livros"></div>
+</body>
+
+</html>
