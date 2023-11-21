@@ -143,37 +143,39 @@
     </symbol>
   </svg>
 
-  
+
   <header>
     <div class="container ">
-      <header class="d-flex flex-wrap align-items-center justify-content-start justify-content-md-between py-3 mb-4 border-bottom">
-        <img src="../img/libros.png" class="img-logo navbar-brand d-inline-flex link-body-emphasis text-decoration-none ">
-  
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-start justify-content-md-between py-3 mb-4 border-bottom">
+        <img src="../img/libros.png"
+          class="img-logo navbar-brand d-inline-flex link-body-emphasis text-decoration-none ">
+
         <ul class="nav col-12 col-md-auto mb-2 mb-md-0">
           <li><a href="../index.html" class="nav-link px-2 action">Home</a></li>
-          
-  
+
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Biblioteca
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="acao.html">Ação</a></li>
-                <li><a class="dropdown-item" href="terror.html">Terror</a></li>
-                <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                <li><a class="dropdown-item" href="documentario.html">Documentário</a></li>
-                <li><a class="dropdown-item" href="motivacional.html">Motivacional</a></li>
-                <li><a class="dropdown-item" href="misterio.html">Mistério</a></li>
-                <li><a class="dropdown-item" href="comedia.html">Comédia</a></li>
-                <li><a class="dropdown-item" href="supense.html">Suspense</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="acao.html">Outros</a></li>
-              </ul>
+              <li><a class="dropdown-item" href="acao.html">Ação</a></li>
+              <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+              <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+              <li><a class="dropdown-item" href="documentario.html">Documentário</a></li>
+              <li><a class="dropdown-item" href="motivacional.html">Motivacional</a></li>
+              <li><a class="dropdown-item" href="misterio.html">Mistério</a></li>
+              <li><a class="dropdown-item" href="comedia.html">Comédia</a></li>
+              <li><a class="dropdown-item" href="supense.html">Suspense</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="acao.html">Outros</a></li>
+            </ul>
           </li>
         </ul>
-  
+
         <form class="d-flex mt-3 mt-lg-0 ms-auto" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-primary" type="submit">Search</button>
@@ -181,119 +183,101 @@
       </header>
     </div>
   </header>
-<body>
+
+  <body>
 
 
-<div class="container border-bottom">
-    <div class="d-flex justify-content-center">
+    <div class="container border-bottom">
+      <div class="d-flex justify-content-center">
         <div class="titulo-acao titulogenero ">
-            <h1 class="mb-2">Cadastrando livros</h1>
+          <h1 class="mb-2">Cadastrando livros</h1>
 
-            <!-- Formulário HTML -->
-            <form id="meuFormulario">
-                <div class="mb-3 col-5">
-                    <label for="imagem" class="form-label col">Imagem URL:</label>
-                    <input type="text" class="form-control" id="imagem" name="imagem" required>
-                </div>
+          <!-- Formulário HTML -->
+          <form id="meuFormulario">
+            <div class="mb-3 col-5">
+              <label for="imagem" class="form-label col">Imagem URL:</label>
+              <input type="text" class="form-control" id="imagem" name="imagem" required>
+            </div>
 
-                <div class="mb-3 col-5">
-                    <label for="titulo" class="form-label">Título:</label>
-                    <input type="text" class="form-control" id="titulo" name="titulo" required>
-                </div>
+            <div class="mb-3 col-5">
+              <label for="titulo" class="form-label">Título:</label>
+              <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
 
-                <div class="mb-3 col-5">
-                    <label for="genero" class="form-label">Gênero:</label>
-                    <input type="text" class="form-control" id="genero" name="genero" required>
-                </div>
+            <div class="mb-3 col-5">
+              <label for="genero">Escolha um gênero:</label><br>
+              <select id="genero" name="genero" required>
+                <option value="#" disabled selected>Gênero</option>
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="documentario">Documentário</option>
+                <option value="misterio">Mistério</option>
+                <option value="motivacional">Motivacional</option>
+                <option value="romance">Romance</option>
+                <option value="suspense">Suspense</option>
+                <option value="terror">Terror</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
 
-                <div class="mb-3 col-5">
-                    <label for="sinopse" class="form-label">Sinopse:</label>
-                    <textarea class="form-control" id="sinopse" name="sinopse" required></textarea>
-                </div>
+            <div class="mb-3 col-5">
+              <label for="sinopse" class="form-label">Sinopse:</label>
+              <textarea class="form-control" id="sinopse" name="sinopse" required></textarea>
+            </div>
 
-                <div class="mb-3 col-5">
-                    <label for="resumo" class="form-label">Resumo:</label>
-                    <textarea class="form-control" id="resumo" name="resumo" required></textarea>
-                </div>
+            <div class="mb-3 col-5">
+              <label for="resumo" class="form-label">Resumo:</label>
+              <textarea class="form-control" id="resumo" name="resumo" required></textarea>
+            </div>
 
-                <div class="col-5">
-                    <button type="submit" class="btn btn-primary ml-auto" onclick="alert('O livro foi adicionado com sucesso!')">Enviar</button>
-                </div>
-            </form>
+            <div class="col-5">
+              <button type="button" class="btn btn-primary ml-auto" onclick="enviarFormulario()">Enviar</button>
+              <button type="reset" class="btn btn-primary ml-auto"> Limpar</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-</div>
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Company, Inc</p>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Company, Inc</p>
 
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a></li>
-      </ul>
-    </footer>
-  </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
     <script>
-        //  função para processar o formulário
-        function processarFormulario() {
-            var imagem = document.getElementById('imagem').value;
-            var titulo = document.getElementById('titulo').value;
-            var genero = document.getElementById('genero').value;
-            var sinopse = document.getElementById('sinopse').value;
-            var resumo = document.getElementById('resumo').value;
+      function enviarFormulario() {
+        // Obter os valores do formulário
+        var imagem = document.getElementById('imagem').value;
+        var titulo = document.getElementById('titulo').value;
+        var genero = document.getElementById('genero').value;
+        var sinopse = document.getElementById('sinopse').value;
+        var resumo = document.getElementById('resumo').value;
 
-            var dadosString = "<div class='card border' style='width: 18rem;' data-toggle='modal' data-target='#exampleModal1'>" +
-                "<img src='" + imagem + "' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>" +
-                "<div class='card-body'>" +
-                "<h5 class='card-title'>" + titulo + "</h5>" +
-                "<p class='card-text'>" + sinopse + "</p>" +
-                "</div>" +
-                "</div>" +
+        // Armazenar os valores no localStorage
+        localStorage.setItem('imagem', nome);
+        localStorage.setItem('titulo', titulo);
+        localStorage.setItem('genero', genero);
+        localStorage.setItem('sinopse', sinopse);
+        localStorage.setItem('resumo', resumo);
 
-                // Modal
-                "<div class='modal fade' id='exampleModal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel1' aria-hidden='true'>" +
-                "<div class='modal-dialog' role='document'>" +
-                "<div class='modal-content'>" +
-                "<div class='modal-header'>" +
-                "<h5 class='modal-title' id='exampleModalLabel1'>" + titulo + "</h5>" +
-                "<button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>" +
-                "<span aria-hidden='true'>&times;</span>" +
-                "</button>" +
-                "</div>" +
-                "<div class='modal-body'>" +
-                "<img src='" + imagem + "' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>" +
-                "<h5 class='card-title'>" + titulo + "</h5>" +
-                "<p class='card-text'>" + resumo + "</p>" +
-                "</div>" +
-                "</div>" +
-                "</div>" +
-                "</div>" +
-                "<div id= 'livro'>" +
-                "</div>";
+        // Redirecionar para a página que imprimirá os valores
+        window.location.href = 'acao.html';
 
-            localStorage.setItem('dadosString', dadosString);
-
-            window.location.href = genero + '.html';
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var formulario = document.getElementById('meuFormulario');
-
-            formulario.addEventListener('submit', function (event) {
-                event.preventDefault(); // Evitar o envio do formulário padrão
-                processarFormulario();
-            });
-        });
+      }
     </script>
-
-</body>
+  </body>
 
 </html>
