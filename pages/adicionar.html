@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cadastrar Livro</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/headers.css">
   <script src="../assets/js/color-modes.js"></script>
@@ -17,6 +17,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/titulogenero.css">
+  <link rel="stylesheet" href="../css/cadastrolivro.css">
 
 
 </head>
@@ -176,10 +177,7 @@
           </li>
         </ul>
 
-        <form class="d-flex mt-3 mt-lg-0 ms-auto" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>
+
       </header>
     </div>
   </header>
@@ -187,13 +185,13 @@
   <body>
 
 
-    <div class="container border-bottom">
+    <div class="container border-bottom formulario">
       <div class="d-flex justify-content-center">
         <div class="titulo-acao titulogenero ">
-          <h1 class="mb-2">Cadastrando livros</h1>
+          <h1 class="mb-2 titulolivro">Cadastrando livros</h1>
 
           <!-- Formulário HTML -->
-          <form id="meuFormulario">
+          <form id="meuFormulario" class=" formulario justify-content-center ">
             <div class="mb-3 col-5">
               <label for="imagem" class="form-label col">Imagem URL:</label>
               <input type="text" class="form-control" id="imagem" name="imagem" required>
@@ -205,7 +203,7 @@
             </div>
 
             <div class="mb-3 col-5">
-              <label for="genero">Escolha um gênero:</label><br>
+              <label for="genero">Escolha um gênero:</label><br><br>
               <select id="genero" name="genero" required>
                 <option value="#" disabled selected>Gênero</option>
                 <option value="acao">Ação</option>
@@ -231,7 +229,7 @@
             </div>
 
             <div class="col-5">
-              <button type="button" class="btn btn-primary ml-auto" onclick="enviarFormulario()">Enviar</button>
+              <button type="button" class="btn btn-primary ml-auto" onclick="enviarFormulario() + alert('Livro adiconado com sucesso!')">Enviar</button>
               <button type="reset" class="btn btn-primary ml-auto"> Limpar</button>
             </div>
           </form>
@@ -273,8 +271,8 @@
         localStorage.setItem('sinopse', sinopse);
         localStorage.setItem('resumo', resumo);
 
-        // Redirecionar para a página que imprimirá os valores
-        window.location.href = 'acao.html';
+        
+        
 
       }
     </script>
