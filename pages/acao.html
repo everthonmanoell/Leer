@@ -194,7 +194,7 @@
     }
   </script>
 
-  <main class="d-flex flex-wrap justify-content-around ml-auto mr-auto">
+  <main class="d-flex flex-wrap justify-content-around ml-auto mr-auto" id="result">
     <div class="titulo-acao titulogenero border-bottom">
       <h1 class="mb-2 ">Ação </h1>
 
@@ -551,8 +551,7 @@ classe h-100 define a altura como 100%-->
     </div>
 
 
-    <!-- A div com o ID específico para exibir os valores -->
-    <div id="resultado"></div>
+
 
 
 
@@ -615,7 +614,7 @@ classe h-100 define a altura como 100%-->
 
     if (genero === nomeDoArquivoSemExtensao) {
       // Exibir os valores na div com o ID "resultado"
-      var resultadoDiv = document.getElementById('resultado');
+      var resultadoDiv = document.getElementById('result');
       resultadoDiv.innerHTML = `
         <div class='card border' style='width: 18rem;' data-toggle='modal' data-target='#exampleModal1'>
             <img src='${imagem}' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>
@@ -642,9 +641,7 @@ classe h-100 define a altura como 100%-->
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id='livro'></div>`;
+        </div>`;
     }
   </script>
 
