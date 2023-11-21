@@ -601,9 +601,22 @@ classe h-100 define a altura como 100%-->
     var sinopse = localStorage.getItem('sinopse');
     var resumo = localStorage.getItem('resumo');
 
-    // Exibir os valores na div com o ID "resultado"
-    var resultadoDiv = document.getElementById('resultado');
-    resultadoDiv.innerHTML = `
+    // Obtém o pathname da URL atual
+    var pathName = window.location.pathname;
+
+    // Separa o pathname em partes usando '/' como delimitador
+    var partesDoPath = pathName.split('/');
+
+    // Obtém o nome do arquivo HTML, que é a última parte do pathname
+    var nomeDoArquivo = partesDoPath[partesDoPath.length - 1];
+
+    // Remove a extensão .html do nome do arquivo
+    var nomeDoArquivoSemExtensao = nomeDoArquivo.replace('.html', '');
+
+    if (genero === nomeDoArquivoSemExtensao) {
+      // Exibir os valores na div com o ID "resultado"
+      var resultadoDiv = document.getElementById('resultado');
+      resultadoDiv.innerHTML = `
         <div class='card border' style='width: 18rem;' data-toggle='modal' data-target='#exampleModal1'>
             <img src='${imagem}' class='card-img-top w-100 h-100' alt='...' style='object-fit: cover;'>
             <div class='card-body'>
@@ -632,7 +645,9 @@ classe h-100 define a altura como 100%-->
         </div>
 
         <div id='livro'></div>`;
-</script>
+    }
+  </script>
+
 
 </body>
 
